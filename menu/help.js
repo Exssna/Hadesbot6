@@ -3,24 +3,16 @@ const a = '```'
 const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal, groupName, premi, Simihh, Welcomee, ModeAnime, Nsfww, BadWordd, AntiLinkk, AntiVirtexx) => { 
 	return `
 	
-${a}Follow My Instagram${a}
-${instagram}
 
+${a}PARA RECURSOS ATUALIZADOS, DIGITE${a} *${prefix}infobot*
 
-
-
-${a}My Youtube${a}
-${yt}
-
-${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
-
-╭─────≽「 *REGULATION ${name}* 」
+╭─────≽「 *REGULAMENTO ${name}* 」
 ┴
-┣⊱>  ${a}NAMA USER:${a} *${pushname2}*
-┣⊱>  ${a}CEK PREMIUM:${a} ${premi}
+┣⊱>  ${a}NOME DE USUÁRIO:${a} *${pushname2}*
+┣⊱>  ${a}CHEQUE PREMIUM:${a} ${premi}
 ┣⊱>  ${a}LIMIT:${a} *${limitt} perhari*
 │
-┣⊱>  ${a}NAMA GRUP:${a} *${groupName}*
+┣⊱>  ${a}NOME DO GRUPO:${a} *${groupName}*
 ┣⊱>  ${a}MODE WELCOME:${a} *${Welcomee}*
 ┣⊱>  ${a}MODE SIMI:${a} *${Simihh}*
 ┣⊱>  ${a}MODE ANIME:${a} *${ModeAnime}*
@@ -29,11 +21,11 @@ ${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 ┣⊱>  ${a}MODE ANTI LINK:${a} *${AntiLinkk}*
 ┣⊱>  ${a}MODE ANTI VIRTEX:${a} *${AntiVirtexx}*
 │
-┣⊱>  ${a}JAM:${a} *${jam} WIB*
-┣⊱>  ${a}TANGGAL:${a} *${tanggal}*
-┣⊱>  ${a}AKTIF:${a} ${kyun(uptime)}
+┣⊱>  ${a}HORA:${a} *${jam} WIB*
+┣⊱>  ${a}ENCONTRO:${a} *${tanggal}*
+┣⊱>  ${a}ATIVO:${a} ${kyun(uptime)}
 ┣⊱>  ${a}VERSION:${a} *0.0.0*
-┣⊱>  ${a}USER TERDAFTAR:${a} *${user.length} User*
+┣⊱>  ${a}USUÁRIO REGISTRADO:${a} *${user.length} User*
 ┬
 ╰────────────────────────
 
@@ -42,54 +34,54 @@ ${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 ┠─≽ *${prefix}mutualan*
 │ ${a}Random Teman Chat${a}
 ┠─≽ *${prefix}report lapor bug*
-│ ${a}Untuk Melaporkan Bug Ke Owner${a}
+│ ${a}Para relatar bugs ao proprietárior${a}
 ┠─≽ *${prefix}info*
-│ ${a}Untuk Menampilkan Info Bot${a}
+│ ${a}Para exibir informações do bot${a}
 ┠─≽ *${prefix}donasi*
-│ ${a}Jika Berkenan Untuk Donasi${a}
+│ ${a}Se você deseja doar${a}
 ┠─≽ *${prefix}owner*
-│ ${a}Bot Mengirimkan Nomer Owner${a}
+│ ${a}Número do proprietário de envio do bot${a}
 ┠─≽ *${prefix}speed*
-│ ${a}Twsting Respon Bot${a}
+│ ${a}Testando a resposta do bot${a}
 ┠─≽ *${prefix}daftar*
-│ ${a}Untuk Mendaftar Yg Belom Terdaftar${a}
+│ ${a}Para registrar, caso não registrado${a}
 ┠─≽ *${prefix}limit*
-│ ${a}Untuk Cek Limit Anda${a}
+│ ${a}Para verificar o seu limite${a}
 ┠─≽ *${prefix}blocklist*
-│ ${a}Check Kontak Kontak Yg Diblock${a}
+│ ${a}Verifique os contatos de contato bloqueados${a}
 ┠─≽ *${prefix}banlist*
-│ ${a}Check Kontak Yg Dibanned${a}
+│ ${a}Verificar contatos banidos${a}
 ┠─≽ *${prefix}premiumlist*
-│ ${a}Menampilkan list user premium${a}
+│ ${a}Exibe uma lista de usuários premium${a}
 ┠─≽ *${prefix}bahasa*
-│ ${a}Untuk Fitur text to speech${a}
+│ ${a}Para o recurso de texto para fala${a}
 ┠─≽ *${prefix}wame*
-│ ${a}Create Link Nomer WA Anda${a}
+│ ${a}Crie o seu link de número WAme${a}
 ┠─≽ *${prefix}cekpremium*
-│ ${a}Check expired title premium anda${a}
+│ ${a}Verifique seu título premium expirado${a}
 ┠─≽ *${prefix}listbadword*
-│ ${a}mengirimkan list badword${a}
+│ ${a}enviar uma lista de palavrões${a}
 ┬
 ╰────────────────────────
 
-╭──≽「 *FITUR SIMPLE ${name}* 」
+╭──≽「 *RECURSOS SIMPLES ${name}* 」
 ┴
 ┠─≽ *${prefix}menucreator*
-│ ${a}Fitur Image Maker${a}
+│ ${a}Recurso Image Maker${a}
 ┠─≽ *${prefix}menumedia*
-│ ${a}Fitur Stalking & Downloader${a}
+│ ${a}Recurso Stalking & Downloaderr${a}
 ┠─≽ *${prefix}menugrup*
-│ ${a}Fitur Khusus Di group${a}
+│ ${a}Recursos especiais no grupo${a}
 ┠─≽ *${prefix}menuothers*
-│ ${a}Fitur Random${a}
+│ ${a}Recurso aleatório${a}
 ┠─≽ *${prefix}menuprimbon*
-│ ${a}Fitur primbon Jodoh, DLL${a}
+│ ${a}Combinando recursos primbon, etc.${a}
 ┠─≽ *${prefix}menuinformasi*
-│ ${a}Fitur Informasi cuaca, DLL${a}
+│ ${a}Recurso de informações meteorológicas, etc.${a}
 ┠─≽ *${prefix}menufun*
-│ ${a}Fitur Untuk Game Bersama Teman${a}
+│ ${a}Recursos para jogos com amigos${a}
 ┠─≽ *${prefix}menuscrapper*
-│ ${a}Fitur scrapper${a}
+│ ${a}Recurso de scrapper${a}
 ┠─≽ *${prefix}menuencrypt*
 │ ${a}Fitur Encrypt & Decrypt${a}
 ┠─≽ *${prefix}menuspam*
@@ -104,11 +96,7 @@ ${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
 ╭────≽「 *SUPPORT ${name}* 」
 ┴
 │➲ ${a}O BOT${a}
-│➲ ${a}M. HADI FIRMANSYA${a}
-│➲ ${a}DELIA AULIA${a}
-│➲ ${a}KEVIN DAVID${a}
-│➲ ${a}MY TEAM FXC7 BOT${a}
-│➲ ${a}PENYEDIA REST API${a}
+│➲ ${a}SR>ALLISON${a}
 │➲ ${a}CONTENT CREATOR BOT WHATSAPP${a}
 ┬
 ╰──────≽ *Created © FXC7*`
