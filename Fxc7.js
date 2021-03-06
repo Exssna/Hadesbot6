@@ -3531,7 +3531,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						fs.writeFileSync('./database/json/badword.json', JSON.stringify(_badword))
 						reply(`\`\`\`✓Desativando com sucesso o recurso anti-palavrao no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
-						reply('on untuk mengaktifkan, off untuk menonaktifkan')
+						reply('on para habilitar, off para desabilitar')
 					}
 					break
 				case 'caklontong':
@@ -3636,7 +3636,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (!isOwner) return reply(mess.only.ownerB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Tag target yang ingin di clone')
+					if (args.length < 1) return reply('A tag alvo que você deseja clonar')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag gan')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
 					let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
@@ -3644,7 +3644,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						pp = await frhan.getProfilePicture(id)
 						buffer = await getBuffer(pp)
 						frhan.updateProfilePicture(botNumber, buffer)
-						mentions(`Foto profile Berhasil di perbarui menggunakan foto profile @${id.split('@')[0]}`, [jid], true)
+						mentions(`Foto do perfil atualizada com sucesso usando a foto do perfil @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
 						reply('Gagal om')
 					}
@@ -3656,7 +3656,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					prefix = args[0]
 					setting.prefix = prefix
 					fs.writeFileSync('./database/json/settings.json', JSON.stringify(setting, null, '\t'))
-					reply(`Prefix berhasil di ubah menjadi : ${prefix}`)
+					reply(`O prefixo foi alterado com sucesso para : ${prefix}`)
 				break
 				case 'setlimit':
 					if (args.length < 1) return
@@ -3664,7 +3664,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					limitt = args[0]
 					setting.limitt = limitt
 					fs.writeFileSync('./database/json/settings.json', JSON.stringify(setting, null, '\t'))
-					reply(`Limit berhasil di ubah menjadi : ${limitt}`)
+					reply(`O limite foi alterado com sucesso para : ${limitt}`)
 				break 
 				case 'setmemlimit':
 					if (args.length < 1) return
@@ -3680,7 +3680,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					name = args[0]
 					setting.name = name
 					fs.writeFileSync('./database/json/settings.json', JSON.stringify(setting, null, '\t'))
-					reply(`Nama Bot berhasil di ubah menjadi : ${name}`)
+					reply(`O nome do bot foi alterado com sucesso para : ${name}`)
 				break 
 				case 'setreply':
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -3689,7 +3689,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					FarhanGans2 = args[0]
 					setting.FarhanGans2 = FarhanGans2
 					fs.writeFileSync('./database/json/settings.json', JSON.stringify(setting, null, '\t'))
-					reply(`reply berhasil di ubah menjadi : ${rmenu}`)
+					reply(`a resposta foi alterada com sucesso para : ${rmenu}`)
 				break 
 ////////////
 				case 'wait':
@@ -3725,20 +3725,20 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					}
 					await limitAdd(sender) 
 					break 
-				case 'infocuaca':
+				case 'infoclima':
 				try {
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
 					frhan.updatePresence(from, Presence.composing)
 					if (isLimit(sender)) return reply(limitend(pushname2))
-					if (args.length < 1) return reply('Kirim perintah *!cuaca [tempat]*\nContoh : *!cuaca Banyuwangi')
+					if (args.length < 1) return reply('Enviar pedidos *!infoclima [tempat]*\nExemplo : *!infoclima brasilia')
 					reply(mess.wait)
 					tempat = `${body.slice(11)}`
 					weather = await fetchFxc7('https://videfikri.com/api/cuaca/?daerah='+ tempat, {method: 'get'})
 					if (weather.error) {
 					 reply(from, weather.error, text)
 					 } else {
-					  frhan.sendMessage(from, `➸ Tempat : ${weather.result.tempat}\n\n➸ Angin : ${weather.result.angin}\n➸ Cuaca : ${weather.result.cuaca}\n➸ Deskripsi : ${weather.result.desc}\n➸ Kelembapan : ${weather.result.kelembapan}\n➸ Suhu : ${weather.result.suhu}\n➸ Udara : ${weather.result.udara}`, text, {quoted: mek})
+					  frhan.sendMessage(from, `➸ O lugar : ${weather.result.tempat}\n\n➸ Vento : ${weather.result.angin}\n➸ Clima : ${weather.result.cuaca}\n➸ Descrição : ${weather.result.desc}\n➸ Umidade : ${weather.result.kelembapan}\n➸ Temperatura : ${weather.result.suhu}\n➸ Ar : ${weather.result.udara}`, text, {quoted: mek})
 					  }
 					  } catch {
 					reply(mess.error.bug)
@@ -3752,7 +3752,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (!isUser) return reply(mess.only.userB)
 				
 				if (isLimit(sender)) return reply(limitend(pushname2))
-					if (args.length < 1) return reply('Mau Nyari Foto Apa???')
+					if (args.length < 1) return reply('O que as fotos querem encontrar???')
 					pinte = body.slice(11)
 					anu = await fetchFxc7(`https://api.vhtear.com/pinterest?query=${pinte}&apikey=${VthearApi}`, {method: 'get'})
 					reply(mess.wait)
@@ -3801,13 +3801,13 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					}
 					 await limitAdd(sender)
 					break
-				case 'jadwalsholat':
+				case 'cronograma':
 				try {
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				
 				if (isLimit(sender)) return reply(limitend(pushname2))
-					if (args.length < 1) return reply('Masukan nama daerah!!')
+					if (args.length < 1) return reply('Insira o nome da área!!')
 					sholat = `${body.slice(14)}`
 					anu = await fetchFxc7(`http://lolhuman.herokuapp.com/api/sholat/${sholat}?apikey=${LolApi}`, {method: 'get'})
 					reply(mess.wait)
@@ -3882,7 +3882,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPrem) return reply(mess.only.premium)
 				frhan.updatePresence(from, Presence.recording)
-				if (args.length < 1) return reply('Urlnya mana gan?')
+				if (args.length < 1) return reply('Cadê o url mano?')
 					if (!isUrl(args[0]) && !args[0].includes('sck')) return reply(mess.error.Iv)
                 anu = await fetchFxc7(`https://api-anoncybfakeplayer.herokuapp.com/sckdown?url=${args[0]}`, {method: 'get'})
                if (anu.error) return reply(anu.error)
@@ -3904,7 +3904,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
     				if (!isPrem) return reply(mess.only.premium)
     				if (!isUser) return reply(mess.only.userB)
     				frhan.updatePresence(from, Presence.recording)
-					if (args.length < 1) return reply('Urlnya mana gan?')
+					if (args.length < 1) return reply('Cadê o url mano?')
 					if (!isUrl(args[0]) && !args[0].includes('youtu.be')) return reply(mess.error.Iv)
 					anu = await fetchFxc7(`https://mhankbarbar.tech/api/ytv?url=${args[0]}&apiKey=${BarBarApi}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
@@ -3928,7 +3928,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				reply(mess.wait)
 				playmp3 = body.slice(9)
 				anu = await fetchFxc7(`https://api.vhtear.com/ytmp3?query=${playmp3}&apikey=${VthearApi}`, {method: 'get'})
-				infomp3 = `╭─「 *TIMELINE PLAY MP3* 」\n│ *• Judul:* ${anu.result.title}\n│ *• Durasi:* ${anu.result.duration}\n│ *•Size:* ${anu.result.duration}\n│\n│ *TUNGGU SEBENTAR LAGI DIKIRIM*\n│ *MOHON JANGAN SPAM YA BEB*\n╰─────────────────────`
+				infomp3 = `╭─「 *TIMELINE PLAY MP3* 」\n│ *• Título:* ${anu.result.título}\n│ *• Duração:* ${anu.result.duration}\n│ *•Tamanho:* ${anu.result.duration}\n│\n│ *Espere um momento para ser enviado*\n│ *POR FAVOR, NÃO SPAM SIM BEB*\n╰─────────────────────`
 				buffer = await getBuffer(anu.result.image)
 				lagu = await getBuffer(anu.result.mp3)
 				frhan.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek, ptt: true})
@@ -3948,7 +3948,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				playmp3 = body.slice(9)
 				anu = await fetchFxc7(`https://naufalhoster.xyz/dl/youtube?apikey=Cv5SHS-9ZxAto-HnWqLR&url=${args[0]}`, {method: 'get'})
 				mp3 = `${anu.result}`
-				infomp3 = `╭─「 *TIMELINE PLAY MP3* 」\n│ *• Judul:* ${mp3.title}\n│ *•Channel:* ${mp3.uploader}\n│ *• Durasi:* ${mp3.duration}\n│ *•Size:* ${mp3.audio.size}\n│ *• Like:* ${mp3.likeCount}\n│ *• Dislike:* ${mp3.dislikeCount}\n│ *• Rating:* ${mp3.rating}\n│ *• Viewers:* ${mp3.viewCount}\n│ *TUNGGU SEBENTAR LAGI DIKIRIM*\n│ *MOHON JANGAN SPAM YA BEB*\n╰─────────────────────`
+				infomp3 = `╭─「 *TIMELINE PLAY MP3* 」\n│ *• Título:* ${mp3.title}\n│ *•Canal:* ${mp3.uploader}\n│ *• Duração:* ${mp3.duration}\n│ *•Tamanho:* ${mp3.audio.size}\n│ *• like:* ${mp3.likeCount}\n│ *• deslike:* ${mp3.dislikeCount}\n│ *• Avaliação:* ${mp3.rating}\n│ *• Visualizadores:* ${mp3.viewCount}\n│ *Espere um momento para ser enviado*\n│ *POR FAVOR, NÃO SPAM SIM BEB*\n╰─────────────────────`
 				buffer = await getBuffer(mp3.thumbnail)
 				lagu = await getBuffer(mp3.audio.url)
 				frhan.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${mp3.title}.mp3`, quoted: mek, ptt: true})
@@ -4006,7 +4006,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (!isUser) return reply(mess.only.userB)
 				
 				if (isLimit(sender)) return reply(limitend(pushname2))
-				if (args.length < 1) return reply('teks nya mana om?')
+				if (args.length < 1) return reply('Cadê o texto tio?')
 				reply(mess.wait)
 				wiki = `${body.slice(6)}`
 				anu = await fetchFxc7(`https://tobz-api.herokuapp.com/api/wiki?q=${wiki}&apikey=${TobzApi}`, {method: 'get'})
@@ -4159,14 +4159,14 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (!isUser) return reply(mess.only.userB)
 				
                 	frhan.updatePresence(from, Presence.recording) 
-					if (!isQuotedVideo) return reply('_*Reply Video nya Gan!*_')
+					if (!isQuotedVideo) return reply('_*Responda ao vídeo, mano!*_')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await frhan.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp4')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('Gagal, pada saat mengkonversi video ke mp3')
+						if (err) return reply('Falha ao converter vídeo para mp3')
 						bufferlkj = fs.readFileSync(ran)
 						frhan.sendMessage(from, bufferlkj, audio, {mimetype: 'audio/mp4', quoted: mek})
 						fs.unlinkSync(ran)
@@ -4175,14 +4175,14 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					break 
 					case 'tovideo':
 					  if (!isUser) return reply(mess.only.userB)
-					  if (!isQuotedSticker) return reply('*☒* Reply stikernya')
+					  if (!isQuotedSticker) return reply('*☒* Responder o sticker')
 					  reply(mess.wait)
 					  anumedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					  anum = await frhan.downloadAndSaveMediaMessage(anumedia)
 					  ran = getRandom('.webp')
 					  exec(`ffmpeg -i ${anum} ${ran}`, (err) => {
 					    fs.unlinkSync(anum)
-					    if (err) return reply('Gagal, pada saat mengkonversi sticker ke Video')
+					    if (err) return reply('Falha ao converter o sticker em vídeo')
 					    buffer = fs.readFileSync(ran)
 					    frhan.sendMessage(from, buffer, video, {quoted: mek, caption: 'Buat apa sii..'})
 					    fs.unlinkSync(ran)
@@ -4192,11 +4192,11 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				case 'setppbot':
 					if (!isOwner) return reply(mess.only.ownerB)
 				    frhan.updatePresence(from, Presence.composing) 
-					if (!isQuotedImage) return reply(`Kirim gambar dengan caption ${prefix}setbotpp atau tag gambar yang sudah dikirim`)
+					if (!isQuotedImage) return reply(`Envie fotos com legendas ${prefix}setbotpp ou tags de imagem que já foram enviadas`)
 					enmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await frhan.downloadAndSaveMediaMessage(enmedia)
 					await frhan.updateProfilePicture(botNumber, media)
-					reply('Makasih profil barunya🙂')
+					reply('Obrigado pelo novo perfil')
 					break
 
 // Fitur Defacer
@@ -4421,7 +4421,7 @@ case 'nping':
 				huu = body.slice(10)
 						bucinrandom.push(huu)
 						fs.writeFileSync('./database/json/bucin.json', JSON.stringify(bucinrandom))
-						reply(`Sukses, Kata \n*${huu}*\n Telah Ditambahkan ke database`)
+						reply(`Sucesso, Disse \n*${huu}*\n Adicionado ao banco de dados`)
 					break
 					case 'bucin':
 						if (isBanned) return reply(mess.only.benned)    
@@ -4443,7 +4443,7 @@ case 'nping':
 					if (!isUser) return reply(mess.only.userB)
 					if (isLimit(sender)) return reply(limitend(pushname2))
 					anu = await fetchFxc7(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${TobzApi}`, {method: 'get'})
-					teks = `╭─「 *MOD DROID SCRAPPER* 」\n│• *Nama*: ${anu.result.title}\n│• *Publisher*: ${anu.result.publisher}\n│• *Mod info:* ${anu.result.mod_info}\n│• *Size*: ${anu.result.size}\n│• *Latest version*: ${anu.result.latest_version}\n│• *Genre*: ${anu.result.genre}\n│• *Link:* ${anu.result.link}\n│• *Download*: ${anu.result.download}\n╰─────────────────────`
+					teks = `╭─「 *MOD DROID SCRAPPER* 」\n│• *Nome*: ${anu.result.title}\n│• *Editor*: ${anu.result.publisher}\n│• *Informação Mod:* ${anu.result.mod_info}\n│• *Tamanho*: ${anu.result.size}\n│• *Última versão*: ${anu.result.latest_version}\n│• *Gênero*: ${anu.result.genre}\n│• *Link:* ${anu.result.link}\n│• *Download*: ${anu.result.download}\n╰─────────────────────`
 					buffer = await getBuffer(anu.result.image)
 					frhan.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 					} catch {
@@ -4457,7 +4457,7 @@ case 'nping':
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 			anu = await fetchFxc7(`https://tobz-api.herokuapp.com/api/happymod?q=${body.slice(10)}&apikey=${TobzApi}`, {method: 'get'})
-			teks = `╭─「 *HAPPY MOD SCRAPPER* 」\n│• *Nama*: ${anu.result.title}\n│• *Version*: ${anu.result.version}\n│• *Size:* ${anu.result.size}\n│• *root*: ${anu.result.root}\n│• *Purchase*: ${anu.result.price}\n│• *Link*: ${anu.result.link}\n│• *Download*: ${anu.result.download}\n╰─────────────────────`
+			teks = `╭─「 *HAPPY MOD SCRAPPER* 」\n│• *Nome*: ${anu.result.title}\n│• *Versão*: ${anu.result.version}\n│• *Tamanho:* ${anu.result.size}\n│• *raiz*: ${anu.result.root}\n│• *Compra*: ${anu.result.price}\n│• *Link*: ${anu.result.link}\n│• *Download*: ${anu.result.download}\n╰─────────────────────`
 			buffer = await getBuffer(anu.result.image)
 			frhan.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 			} catch {
@@ -4487,7 +4487,7 @@ case 'nping':
 			if (isBanned) return reply(mess.wait.benned)
 			if (!isUser) return reply(mess.only.userB)
 			if (isLimit(sender)) return reply(limitend(pushname2))
-			if (args.length < 1)return reply('Nama Channelnya??')
+			if (args.length < 1)return reply('Nome do canal??')
 			reply(mess.wait)
 			wttpd = `${body.slice(9)}`
 			anu = await fetchFxc7(`http://nzcha-apii.herokuapp.com/wattpad-search?q=${wttpd}`, {method: 'get'})
@@ -4581,7 +4581,7 @@ case 'nping':
 			case 'addstatus':
 					if (!isOwner) return reply(mess.only.ownerB)
 					frhan.sendMessage('status@broadcast', `${args[0]}`, extendedText)
-					reply('✓Sukses...')
+					reply('✓Sucesso...')
 			break 
 	// new features
 		case 'addpremium':
@@ -4590,7 +4590,7 @@ case 'nping':
 			const pnom = {id: `${args[0].replace("@",'')}@s.whatsapp.net`, expired: Date.now() + toMs(expired) }
 			premium.push(pnom) 
 			fs.writeFileSync('./database/json/premium.json',JSON.stringify(premium))
-			reply(`「 PREMIUM ADD 」*\n*Name* : ${pnom}\n*Expired* : 30 DAY\n*thank for order premium*`)
+			reply(`「 PREMIUM ADD 」*\n*Nome* : ${pnom}\n*Expirado* : 30 DIA\n*obrigado pelo pedido premium*`)
 		break
 		case 'dellpremium':
 			if (!isOwner) return reply(mess.only.ownerB)
@@ -4603,7 +4603,7 @@ case 'nping':
 			fs.writeFileSync('./database/json/premium.json',JSON.stringify(arr))
 			}
 			}
-			reply(`*「 PREMIUM DELETE 」*\n*Name* : ${hnom}\n*Expired* : NOW:v\n*thank for order premium back soon for buying again:D*`)
+			reply(`*「 PREMIUM DELETE 」*\n*Nome* : ${hnom}\n*Expirado* : AGORA:v\n*obrigado pelo pedido premium de volta em breve para comprar novamente:D*`)
 			break 
 		case 'premiumlist':
 			if (!isUser) return reply(mess.only.userB)
@@ -4615,28 +4615,28 @@ case 'nping':
 			const checkExp = ms(getPremiumExpired(deret[i]) - Date.now())
 			arrayPremi.push(getAllPremiumUser()[i])
 			nomorList++
-			listPremi += `${nomorList}. wa.me/${getAllPremiumUser()[i].split("@")[0]}\n➸ *Expired*: ${checkExp.days} day(s) ${checkExp.hours} hour(s) ${checkExp.minutes} minute(s)\n\n`
+			listPremi += `${nomorList}. wa.me/${getAllPremiumUser()[i].split("@")[0]}\n➸ *Expirado*: ${checkExp.days} dia(s) ${checkExp.hours} hora(s) ${checkExp.minutes} minuto(s)\n\n`
 			}
 			await reply(listPremi)
 		break
-		case 'addbadword':
+		case 'addpalavrao':
 			if (!isOwner) return reply(mess.only.ownerB)
 			if (!isGroupAdmins) return reply(mess.only.admin)
 			const bw = body.slice(12)
 			bad.push(bw)
 			fs.writeFileSync('./database/json/bad.json', JSON.stringify(bad))
-			reply('Success ✓')
+			reply('Sucesso ✓')
 		break
-		case 'dellbadword':
+		case 'dellpalavrao':
 			if (!isOwner) return reply(mess.only.ownerB)
 			if (!isGroupAdmins) return reply(mess.only.admin)
 			let dbw = body.slice(12)
 			bad.splice(dbw)
 			fs.writeFileSync('./database/json/bad.json', JSON.stringify(bad))
-			reply('Success ✓')
+			reply('Sucesso ✓')
 		break 
-		case 'listbadword':
-			let lbw = `list BAD WORD\nTotal : ${bad.length}\n`
+		case 'listpalavrao':
+			let lbw = `listar palavrões\nTotal : ${bad.length}\n`
 			for (let i of bad) {
 			lbw += `➸ ${i.replace(bad)}\n`
 			}
