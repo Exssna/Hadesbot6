@@ -17,7 +17,7 @@ ${a}PARA RECURSOS ATUALIZADOS, DIGITE${a} *${prefix}infobot*
 ┣⊱>  ${a}MODE SIMI:${a} *${Simihh}*
 ┣⊱>  ${a}MODE ANIME:${a} *${ModeAnime}*
 ┣⊱>  ${a}MODE NSFW:${a} *${Nsfww}*
-┣⊱>  ${a}MODE ANTI BADWORD:${a} *${BadWordd}*
+┣⊱>  ${a}MODE ANTI PALAVRAO:${a} *${BadWordd}*
 ┣⊱>  ${a}MODE ANTI LINK:${a} *${AntiLinkk}*
 ┣⊱>  ${a}MODE ANTI VIRTEX:${a} *${AntiVirtexx}*
 │
