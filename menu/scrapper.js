@@ -3,14 +3,14 @@ const scrapper = (prefix, pushname2, groupName, user, name) => {
 return `
 ╭─────≽「 *REGULATION ${name}* 」
 ┴
-┣⊱  ${a}NAMA USER:${a} *${pushname2}*
-┣⊱  ${a}NAMA GRUP:${a} *${groupName}*
-┣⊱  ${a}VERSION:${a} *0.0.0*
-┣⊱  ${a}USER TERDAFTAR:${a} *${user.length} User*
+┣⊱  ${a}NOME DE USUÁRIO:${a} *${pushname2}*
+┣⊱  ${a}NOME DO GRUPO:${a} *${groupName}*
+┣⊱  ${a}VERSÃO:${a} *0.0.0*
+┣⊱  ${a}USUÁRIO REGISTRADO:${a} *${user.length} User*
 ┬
 ╰────────────────────────
 
-╭──≽「 *STORY & SCRAPPER MENU* 」
+╭──≽「 *MENU DE HISTÓRIA E PORNO* 」
 ┴
 ┠≽ *${prefix}wattpad tere liye*
 ┠≽ *${prefix}randomkpop*
