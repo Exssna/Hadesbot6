@@ -4,11 +4,11 @@ return `
 
 ╭─────≽「 *REGULATION ${name}* 」
 ┴
-┣⊱>  ${a}NAMA USER:${a} *${pushname2}*
+┣⊱>  ${a}NOME USER:${a} *${pushname2}*
 ┣⊱>  ${a}CEK PREMIUM:${a} ${premi}
 ┣⊱>  ${a}LIMIT:${a} *${limitt} perhari*
 │
-┣⊱>  ${a}NAMA GRUP:${a} *${groupName}*
+┣⊱>  ${a}NOME GRUP:${a} *${groupName}*
 ┣⊱>  ${a}MODE WELCOME:${a} *${Welcomee}*
 ┣⊱>  ${a}MODE SIMI:${a} *${Simihh}*
 ┣⊱>  ${a}MODE ANIME:${a} *${ModeAnime}*
@@ -17,15 +17,15 @@ return `
 ┣⊱>  ${a}MODE ANTI LINK:${a} *${AntiLinkk}*
 ┣⊱>  ${a}MODE ANTI VIRTEX:${a} *${AntiVirtexx}*
 │
-┣⊱>  ${a}JAM:${a} *${jam} WIB*
-┣⊱>  ${a}TANGGAL:${a} *${tanggal}*
-┣⊱>  ${a}AKTIF:${a} ${kyun(uptime)}
-┣⊱>  ${a}VERSION:${a} *0.0.0*
-┣⊱>  ${a}USER TERDAFTAR:${a} *${user.length} User*
+┣⊱>  ${a}HORA:${a} *${jam} WIB*
+┣⊱>  ${a}ENCONTRO:${a} *${tanggal}*
+┣⊱>  ${a}ATIVO:${a} ${kyun(uptime)}
+┣⊱>  ${a}VERSÃO:${a} *0.0.0*
+┣⊱>  ${a}USER REGISTRADO:${a} *${user.length} User*
 ┬
 ╰────────────────────────
 
-╭──≽「 *AKTIFKAN JIKA DIPERLUKAN* 」
+╭──≽「 *ATIVAR SE NECESSÁRIO* 」
 ┴
 ┠≽ *${prefix}antilink On/Off*
 ┠≽ *${prefix}welcome On/Off*
@@ -60,7 +60,7 @@ return `
 ┬
 ╰───────────────────────
 │
-╭──────≽「 *GROUP ONLY ADMIN* 」
+╭──────≽「 *SOMENTE ADMINISTRADOR DE GRUPO* 」
 ┴
 ┠≽ *${prefix}fitnah @mentioned/isi/balasan*
 ┠≽ *${prefix}ownergrup*
@@ -85,7 +85,7 @@ return `
 ┬
 ╰────────────────────────
 │
-╭──────≽「 *ANIME HOT* 」
+╭──────≽「 *ANIME PORNO* 」
 ┴
 ┠≽ *${prefix}nsfwloli*
 ┠≽ *${prefix}nsfwpussy*
