@@ -13,19 +13,19 @@ return `
 
 ╭─────≽「 *PRIMBON MENU* 」
 ┴
-┠≽ *${prefix}apakah aku ganteng?*
-┠≽ *${prefix}kapankah aku menikah?*
-┠≽ *${prefix}bisakah aku memilikimu?*
-┠≽ *${prefix}rate reply something*
-┠≽ *${prefix}watak Farhan*
-┠≽ *${prefix}hobby Farhan*
-┠≽ *${prefix}gantengcek Farhan*
-┠≽ *${prefix}cantikcek Iriene*
-┠≽ *${prefix}persengay Topan*
-┠≽ *${prefix}pbucin Farhan*
+┠≽ *${prefix}apakah (Eu sou bonito?*
+┠≽ *${prefix}kapankah (Eu sou casado?*
+┠≽ *${prefix}posso (ter você?*
+┠≽ *${prefix}rate (responder algo*
+┠≽ *${prefix}personagem (Hades*
+┠≽ *${prefix}passatempo (Hades*
+┠≽ *${prefix}jeitoso (Hades*
+┠≽ *${prefix}lindo (Hades*
+┠≽ *${prefix}porcentgay (Hades*
+┠≽ *${prefix}pbucin (Hades*
 ┠≽ *${prefix}mimpi Ular*
-┠≽ *${prefix}artinama Farhan*
-┠≽ *${prefix}pasangan Farhan/Iriene*
+┠≽ *${prefix}artinama Hades*
+┠≽ *${prefix}pasangan Hades/Iriene*
 ┠≽ *${prefix}tanggaljadian 13/02/2021*
 ┠≽ *${prefix}zodiak taurus*
 ┬
