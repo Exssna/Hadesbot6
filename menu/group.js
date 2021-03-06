@@ -13,7 +13,7 @@ return `
 ┣⊱>  ${a}MODE SIMI:${a} *${Simihh}*
 ┣⊱>  ${a}MODE ANIME:${a} *${ModeAnime}*
 ┣⊱>  ${a}MODE NSFW:${a} *${Nsfww}*
-┣⊱>  ${a}MODE ANTI BADWORD:${a} *${BadWordd}*
+┣⊱>  ${a}MODE ANTI PALAVRAO:${a} *${BadWordd}*
 ┣⊱>  ${a}MODE ANTI LINK:${a} *${AntiLinkk}*
 ┣⊱>  ${a}MODE ANTI VIRTEX:${a} *${AntiVirtexx}*
 │
@@ -29,12 +29,12 @@ return `
 ┴
 ┠≽ *${prefix}antilink On/Off*
 ┠≽ *${prefix}welcome On/Off*
-┠≽ *${prefix}grup buka/tutup*
+┠≽ *${prefix}grup on/off*
 ┠≽ *${prefix}modeanime On/Off*
 ┠≽ *${prefix}nsfw On/Off*
 ┠≽ *${prefix}simih On/Off*
 ┠≽ *${prefix}antivirtex on/off*
-┠≽ *${prefix}badword on/off*
+┠≽ *${prefix}palavrao on/off*
 ┬
 ╰────────────────────────
 │
