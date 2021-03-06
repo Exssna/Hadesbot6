@@ -70,7 +70,7 @@ ${a}PARA RECURSOS ATUALIZADOS, DIGITE${a} *${prefix}infobot*
 │ ${a}Recurso Image Maker${a}
 ┠─≽ *${prefix}menumedia*
 │ ${a}Recurso Stalking & Downloaderr${a}
-┠─≽ *${prefix}menugrup*
+┠─≽ *${prefix}menugroup*
 │ ${a}Recursos especiais no grupo${a}
 ┠─≽ *${prefix}menuothers*
 │ ${a}Recurso aleatório${a}
@@ -118,12 +118,12 @@ function kyun(seconds){
 // info bot 
 const bottt = (prefix) => {
 return `
-${a}Untuk Sekarang Bot Hanya Bisa Digunakan Di Group Karna,${a} \n*Kalian Yang Menggunakan Bot Terlalu Spam*
+${a}Por enquanto, o bot só pode ser usado em grupo,${a} \n*Aqueles de vocês que usam bots são muito spam*
 
 *NOTE:*
-Jika Bot Ini Ada Di Grup Anda Admin Grup Suruh Aktifkan Bot Dengan Cara ${prefix}bott aktif
+Se este bot estiver em seu grupo de administração, diga para ativar o bot por via ${prefix}bott on
 
-*Adapun Daftar Menu Yang Di Public Sama Owner Dan Bisa Kalian Gunakan Tanpa Di Group*
+*A lista de menus que é pública com o mesmo proprietário e que você pode usar sem estar em um grupo*
 
 - ${prefix}brainly
 - ${prefix}kalkulator
@@ -160,28 +160,28 @@ Jika Bot Ini Ada Di Grup Anda Admin Grup Suruh Aktifkan Bot Dengan Cara ${prefix
 - ${prefix}instavid
 - ${prefix}instaimg
 
-*Apa Yang Terbaru??*
+*O que há de novo??*
 
-~ random gambar KPOP ✓
-~ random gambar EXO ✓
-~ Fitur Anti virtex ✓
-~ Fitur Anti Link ✓
-~ Bacotan Dilan ✓
-~ wattpad searching ✓
-~ puisi dalam bentuk gambar ✓
-~ Mencari resep masakan ✓
-~ text to picture (bisa request warna) ✓
-~ Tiktok scrapper ✓
+~ imagens KPOP aleatórias ✓
+~ imagens EXO aleatórias ✓
+~ Recurso anti virtex ✓
+~ Recurso Anti Link ✓
+~ Leitura de Dilan ✓
+~ wattpad procurando ✓
+~ poesia em forma de imagem ✓
+~ Procurando por receitas ✓
+~ texto para imagem (pode solicitar cor) ✓
+~ Scrapper de Tiktok ✓
 ~ instagram image downloader ✓ => command: ${prefix}instaimg link url
 ~ instagram video downloader ✓ => command: ${prefix}instavid link url
 
-~ Resep Masakan ✓ => comand: ${prefix}resepmasakan rawon [ contoh]
+~ Receitas ✓ => comand: ${prefix}resepmasakan rawon [ contoh]
 
 ~ Anti Virtex on/off ✓ command: ${prefix}antivirtex on
-- *Gunakan Apabila Ada Yg Ngirim Virtex*
+- *Use quando houver enviar Virtex*
 
 ~ Anti Virtex ✓ => command: ${prefix}antivirtexx
-- *Bot Akan Mengirimkan Teks Biar Member Tidak Mengalami Lag*
+- *O bot enviará texto para que os membros não tenham lag*
 
 ~ Xnxx scrapper ✓
 
@@ -194,18 +194,11 @@ const donasi = (name) => {
 	return `       
 ╭─≽「 *DONASI AGAR BOT TETAP ONLINE* 」
 ┴
-│✓ *Trakteer: https://trakteer.id/FarhanXCo*
-│✓ *Saweria: https://saweria.co/FarhanXCo*
-│
-│✓ ${a}Pulsa: 08311800241${a}
-│ *15k Invite Bot Ke Grup selama 1 bulan*
-│
-│✓ ${a}OVO: 08311800241${a}
-│ *10k Invite Bot Ke Group Selama 1 Bulan*
+..........
 ┬
 ╰─────≽「 *BY ${name}* 」
 
-Untuk Kelangsungan Hidup Bot Karna Kuota Mahal:'
+Para a sobrevivência do bot porque as cotas são caras:'
 `
 }
 exports.donasi = donasi
@@ -333,7 +326,7 @@ exports.listsurah = listsurah
 // bahasa list
 const bahasa = (prefix) => {
 return `
-List Bahasa Untuk Command *${prefix}tts*
+Lista de idiomas para comando *${prefix}tts*
 
   af: Afrikaans
   sq: Albanian
