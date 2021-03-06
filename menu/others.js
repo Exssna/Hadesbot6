@@ -31,7 +31,7 @@ return `
 
 ╭─────≽「 *ISLAMIC MENU* 」
 ┴
-┠≽ *${prefix}jadwalsholat Banyuwangi*
+┠≽ *${prefix}cronograma brasilia*
 ┠≽ *${prefix}quran*
 ┠≽ *${prefix}listsurah*
 ┠≽ *${prefix}quransurah 1*
