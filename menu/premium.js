@@ -3,15 +3,15 @@ const menupremium = (prefix, pushname2, groupName, user, name, premium, premi) =
 return `
 ╭─────≽「 *REGULATION ${name}* 」
 ┴
-┣⊱  ${a}NAMA USER:${a} *${pushname2}*
-┣⊱  ${a}NAMA GRUP:${a} *${groupName}*
-┣⊱  ${a}VERSION:${a} *0.0.0*
-┣⊱  ${a}USER PREMIUM:${a} *${premi}*
-┣⊱  ${a}USER TERDAFTAR:${a} *${user.length} User*
+┣⊱  ${a}NOME DE USUÁRIO:${a} *${pushname2}*
+┣⊱  ${a}NOME DO GRUPO:${a} *${groupName}*
+┣⊱  ${a}VERSÃO:${a} *0.0.0*
+┣⊱  ${a}USUÁRIO PREMIUM:${a} *${premi}*
+┣⊱  ${a}USUÁRIO REGISTRADO:${a} *${user.length} User*
 ┬
 ╰────────────────────────
 
-╭───────≽「 *PREMIUM ONLY* 」
+╭───────≽「 *SOMENTE PREMIUM* 」
 ┴
 ┠≽ *${prefix}playmp3 menepi*
 ┠≽ *${prefix}fb link video*
