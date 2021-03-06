@@ -2,98 +2,98 @@ const a = '```'
 const creator = (prefix, pushname2, groupName, user, name) => {
 return `
 
-${a}UNTUK FITUR TERUPDATE SILAHKAN KETIK${a} *${prefix}infobot*
+${a}PARA RECURSOS ATUALIZADOS, DIGITE${a} *${prefix}infobot*
 
-╭─────≽「 *REGULATION ${name}* 」
+╭─────≽「 *REGULAMENTO ${name}* 」
 ┴
-┣⊱  ${a}NAMA USER:${a} *${pushname2}*
-┣⊱  ${a}NAMA GRUP:${a} *${groupName}*
-┣⊱  ${a}VERSION:${a} *0.0.0*
-┣⊱  ${a}USER TERDAFTAR:${a} *${user.length} User*
+┣⊱  ${a}NOME USER:${a} *${pushname2}*
+┣⊱  ${a}NOME DO GRUPO:${a} *${groupName}*
+┣⊱  ${a}VERSÃO:${a} *0.0.0*
+┣⊱  ${a}USUÁRIO REGISTRADO:${a} *${user.length} User*
 ┬
 ╰────────────────────────
 
 ╭─────≽「 *CREATOR MENU* 」
 ┴
 ┠≽ *${prefix}quotemaker tx/wtrmk/tema*
-├── _Example: ${prefix}quotemaker Farhan/Farhan/random_
+├── _Example: ${prefix}quotemaker Hades/Hades/random_
 ┠≽ *${prefix}nulis text*
-├── _Example: ${prefix}nulis Farhan Gans_
+├── _Example: ${prefix}nulis Hades Gans_
 ┠≽ *${prefix}croman TEXT dan Friend*
 ├── _Example: ${prefix}croman Farhan & Friend_
 ┠≽ *${prefix}slide TEXT*
 ├── _Example: ${prefix}slide Farhan & Friend_
 ┠≽ *${prefix}trigger*
-├── _Example: reply Gambar dan caption ${prefix}trigger_
+├── _Example: responder imagem e legenda ${prefix}trigger_
 ┠≽ *${prefix}wasted*
-├── _Example: reply Gambar dan caption ${prefix}wasted_
+├── _Example: responder imagem e legenda ${prefix}wasted_
 ┠≽ *${prefix}pelangi*
-├── _Example: reply Gambar dan caption ${prefix}pelangi_
+├── _Example: responder imagem e legenda ${prefix}pelangi_
 ┠≽ *${prefix}sepia*
-├── _Example: reply Gambar dan caption ${prefix}sepia_
+├── _Example: responder imagem e legenda ${prefix}sepia_
 ┠≽ *${prefix}merah*
-├── _Example: reply Gambar dan caption ${prefix}merah_
+├── _Example: responder imagem e legenda ${prefix}merah_
 ┠≽ *${prefix}hijau*
-├── _Example: reply Gambar dan caption ${prefix}hijau_
+├── _Example: responder imagem e legenda ${prefix}hijau_
 ┠≽ *${prefix}biru*
-├── _Example: reply Gambar dan caption ${prefix}biru_
+├── _Example: responder imagem e legenda ${prefix}biru_
 ┠≽ *${prefix}glass*
-├── _Example: reply Gambar dan caption ${prefix}glass_
+├── _Example: responder imagem e legenda ${prefix}glass_
 ├───────────────────
 ┠≽ *${prefix}listephoto*
-├── _Example: untuk menampilkan list ephoto_
+├── _Example: para exibir a lista de fotos_
 ┠≽ *${prefix}ephoto 1 - 216*
-├── _Example: ${prefix}ephoto 5 Farhan_
+├── _Example: ${prefix}ephoto 5 Hades_
 ┠≽ *${prefix}listtextpro*
-├── _Example: untuk menampilkan list text pro_
+├── _Example: para exibir o texto da lista pro_
 ┠≽ *${prefix}textpro 1 - 162*
-├── _Example: ${prefix}textpro 1 Farhan_
+├── _Example: ${prefix}textpro 1 Hades_
 ┠≽ *${prefix}fbgoldbutton TEXT*
-├── _Example: ${prefix}fbgoldbutton Farhan_
+├── _Example: ${prefix}fbgoldbutton Hades_
 ┠≽ *${prefix}tahta TEXT*
-├── _Example: ${prefix}tahta Farhan_
+├── _Example: ${prefix}tahta Hades_
 ┠≽ *${prefix}cglitch TEXT/TEXT*
-├── _Example: ${prefix}cglitch Farhan/Gans_
+├── _Example: ${prefix}cglitch Hades/Gans_
 ┠≽ *${prefix}cglass TEXT*
-├── _Example: ${prefix}cglass Farhan_
+├── _Example: ${prefix}cglass Hades_
 ┠≽ *${prefix}cballon TEXT*
-├── _Example: ${prefix}cballon Farhan_
+├── _Example: ${prefix}cballon Hades_
 ┠≽ *${prefix}cstyle TEXT*
-├── _Example: ${prefix}cstyle Farhan_
+├── _Example: ${prefix}cstyle Hades_
 ┠≽ *${prefix}clove TEXT*
-├── _Example: ${prefix}clove Farhan_
+├── _Example: ${prefix}clove Hades_
 ┠≽ *${prefix}cparty TEXT*
-├── _Example: ${prefix}cparty Farhan_
+├── _Example: ${prefix}cparty Hades_
 ┠≽ *${prefix}csky TEXT*
-├── _Example: ${prefix}csky Farhan_
+├── _Example: ${prefix}csky Hades_
 ┠≽ *${prefix}tts id TEXT*
-├── _Example: ${prefix}tts id Farhan_
+├── _Example: ${prefix}tts id Hades_
 ┠≽ *${prefix}ttp TEXT*
-├── _Example: ${prefix}ttp Farhan_
+├── _Example: ${prefix}ttp Hades_
 ├───────────────────
 ┠≽ *${prefix}stiker*
-├── _Example: reply gambar dan caption ${prefix}stiker_
+├── _Example: imagem de resposta e legenda ${prefix}stiker_
 ┠≽ *${prefix}toimg*
-├── _Example: reply stiker dan caption ${prefix}toimg_
+├── _Example: adesivos e legendas de resposta ${prefix}toimg_
 ┠≽ *${prefix}tovideo*
-├── _Example: reply video dan caption ${prefix}tovideo_
+├── _Example: responder vídeo e legenda ${prefix}tovideo_
 ┠≽ *${prefix}img2url*
-├── _Example: reply gambar dan caption ${prefix}img2url_
+├── _Example: imagem de resposta e legenda ${prefix}img2url_
 ┠≽ *${prefix}tomp3*
-├── _Example: reply video dan caption ${prefix}tomp3_
+├── _Example: responder vídeo e legenda ${prefix}tomp3_
 ┠≽ *${prefix}ocr*
-├── _Example: reply gambar dan caption ${prefix}ocr_
+├── _Example: imagem de resposta e legenda ${prefix}ocr_
 ├───────────────────
 ┠≽ *${prefix}slow*
-├── _Example: reply audio/video dan caption ${prefix}slow_
+├── _Example: resposta e legenda de áudio/vídeo ${prefix}slow_
 ┠≽ *${prefix}gemuk*
-├── _Example: reply audio/video dan caption ${prefix}gemuk_
+├── _Example: resposta e legenda de áudio/vídeo ${prefix}gemuk_
 ┠≽ *${prefix}tupai*
-├── _Example: reply audio/video dan caption ${prefix}tupai_
+├── _Example: resposta e legenda de áudio/vídeo ${prefix}tupai_
 ┠≽ *${prefix}bass*
-├── _Example: reply audio/video dan caption ${prefix}bass_
+├── _Example: resposta e legenda de áudio/vídeo ${prefix}bass_
 ┠≽ *${prefix}toptt*
-├── _Example: reply audio/video dan caption ${prefix}toptt_
+├── _Example: resposta e legenda de áudio/vídeo ${prefix}toptt_
 ┬
 ╰──────────────────────────
 `
@@ -102,7 +102,7 @@ exports.creator = creator
 
 const listephoto = () => {
 return `
-1 ~> Write text on wet glass online
+1 ~> Escreva texto em vidro molhado online
 2 ~> Multicolor 3D paper cut style text effect
 3 ~> Free Glitter Text Effect Maker Online
 4 ~> Create a watercolor text effect online
