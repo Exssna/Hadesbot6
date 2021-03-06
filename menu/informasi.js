@@ -3,10 +3,10 @@ const informasi = (prefix, pushname2, groupName, user, name) => {
 return `
 ╭─────≽「 *REGULATION ${name}* 」
 ┴
-┣⊱  ${a}NAMA USER:${a} *${pushname2}*
-┣⊱  ${a}NAMA GRUP:${a} *${groupName}*
-┣⊱  ${a}VERSION:${a} *0.0.0*
-┣⊱  ${a}USER TERDAFTAR:${a} *${user.length} User*
+┣⊱  ${a}NOME USER:${a} *${pushname2}*
+┣⊱  ${a}NOME DO GRUPO:${a} *${groupName}*
+┣⊱  ${a}VERSÃO:${a} *0.0.0*
+┣⊱  ${a}USUÁRIO REGISTRADO:${a} *${user.length} User*
 ┬
 ╰────────────────────────
 
@@ -17,16 +17,16 @@ return `
 ┠≽ *${prefix}jarak Banyuwangi/Surabaya*
 ┠≽ *${prefix}translate en/Apa kabar?*
 ┠≽ *${prefix}bpfont Farhan*
-┠≽ *${prefix}textstyle FXC7*
+┠≽ *${prefix}textstyle HADES*
 ┠≽ *${prefix}jadwaltv antv*
 ┠≽ *${prefix}jadwaltvnow*
-┠≽ *${prefix}lirik melukis senja*
-┠≽ *${prefix}chord Melukis senja*
+┠≽ *${prefix}lirik (NOME DE UM FILME)*
+┠≽ *${prefix}chord (NOME DE UM FILME)*
 ┠≽ *${prefix}wiki Adolf Hitler*
-┠≽ *${prefix}brainly pertanyaan*
+┠≽ *${prefix}brainly pergunta*
 ┠≽ *${prefix}resepmasakan bakwan*
 ┠≽ *${prefix}map Banyuwangi*
-┠≽ *${prefix}film Fast and Farious*
+┠≽ *${prefix}film (NOME DE UM FILME)*
 ┠≽ *${prefix}pinterest gambar kucing*
 ┠≽ *${prefix}infocuaca Banyuwangi*
 ┠≽ *${prefix}jamdunia Banyuwangi*
